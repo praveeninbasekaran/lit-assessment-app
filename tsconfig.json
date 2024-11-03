@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "rootDir": "src",
+        "strict": true,
+        "experimentalDecorators": true,
+        "useDefineForClassFields": false,
+        "esModuleInterop": true
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}

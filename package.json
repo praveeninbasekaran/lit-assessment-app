@@ -1,0 +1,25 @@
+{
+  "name": "lit-assessment-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && esbuild src/main.ts --bundle --outfile=dist/src/main.js && copyfiles index.html dist/index.html && copyfiles src/styles/*.css dist/",
+    "start": "web-dev-server --config web-dev-server.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lit/reactive-element": "^2.0.4",
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6",
+    "copyfiles": "^2.4.1",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.3"
+  }
+}
